@@ -1,6 +1,13 @@
+# This code uses Tkinter GUI Package. Make sure to install it before using code. To install Tkinter package open Command Prompt from admin account and enter "pip install tk".
+
+
+
+
+
 from tkinter import *
 
 window = Tk()
+
 
 #window.geometry('450x550')
 #window.configure(bg ='#FFFFFF')
@@ -25,7 +32,7 @@ def totalgame():
         r0 = [" ", " ", " "]
         r1 = [" ", " ", " "]
         r2 = [" ", " ", " "]
-
+#This code belongs to Abhijith Dameruppala
         def win(a):
             #for i in window.winfo_children():
             #    i.destroy()
@@ -110,7 +117,7 @@ def totalgame():
                     else:
                         B3.configure(text=k, font=('Arial'), bg='#FFD9BD')
                     r0[c] = k
-
+        #This code belongs to Abhijith Dameruppala
 
             elif(r == 1):
 
@@ -203,7 +210,7 @@ def totalgame():
         B9.grid(row=3, column=2)
 
 
-
+    #This code belongs to Abhijith Dameruppala
     inst = Label(text="Hello! Welcome to Tic Tac Toe. Player 1, Choose your symbol!", font='Arial', bg ='#FFFFFF')
     X = Button(window, padx = 40, pady = 40,text="X", command=lambda:game("X"), font='Arial', bg ='#FFFFFF')
     O = Button(window, padx = 40, pady = 40, text="O", command=lambda:game("O"), font='Arial', bg ='#FFFFFF')
