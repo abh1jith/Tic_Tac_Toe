@@ -15,22 +15,29 @@ def notempty(r1, r2, r3):
 def insert(r, c, k):
     if(r == 0):
         if(r1[c] == " "):
-            r1[c] = k
+            r1[c] = k# Code by Abhijith
         else:
             print("Invalid")
+            print()
             return
     elif(r == 1):
         if(r2[c] == " "):
             r2[c] = k
         else:
             print("Invalid")
-            return
-    else:# Code by Abhijith
+            print()
+            return# Code by Abhijith
+    elif(r == 3):
         if(r3[c] == " "):
             r3[c] = k
         else:
             print("Invalid")
+            print()
             return
+    else:
+        print("Invalid")
+        print()
+        return
 # Code by Abhijith
 def game(r1, r2, r3):
     # Row
@@ -56,19 +63,19 @@ def game(r1, r2, r3):
         return True
     elif(r1[2] == r2[1] == r3[0] != " "):
         print(f"{r1[2]} won")
-        return True
+        return True# Code by Abhijith
 
-# Code by Abhijith
+
 count = 1
 r1 = [" ", " ", " "]
 r2 = [" ", " ", " "]
 r3 = [" ", " ", " "]
 print(r1)
 print(r2)
-print(r3)
+print(r3)# Code by Abhijith
 while(notempty(r1, r2, r3)):
     r = int(input("Enter row number: "))
-    c = int(input("Enter column number: "))# Code by Abhijith
+    c = int(input("Enter column number: "))
     if(count % 2 == 0):
         insert(r, c, 'O')
     else:
@@ -79,7 +86,7 @@ while(notempty(r1, r2, r3)):
     print(r3)
     count = count + 1
     if(game(r1, r2, r3)):
-        break# Code by Abhijith
+        break
 
 if(notempty(r1, r2, r3) == False):
     print("DRAW")
